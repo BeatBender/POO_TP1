@@ -1,3 +1,5 @@
+#include "Date.h"
+
 class Parcours
 {
 public:
@@ -5,5 +7,5 @@ public:
 	~Parcours();
 
 private:
-
+	Date date;
 };

@@ -1,3 +1,6 @@
+#include <string>
+#include "Date.h"
+
 class Palmares
 {
 public:
@@ -5,5 +8,6 @@ public:
 	~Palmares();
 
 private:
-
+	std::string titre;
+	Date date;
 };

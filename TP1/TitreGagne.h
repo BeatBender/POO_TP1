@@ -1,3 +1,6 @@
+#include "Palmares.h"
+#include "Club.h"
+
 class TitreGagne
 {
 public:
@@ -5,5 +8,6 @@ public:
 	~TitreGagne();
 
 private:
-
+	Palmares palmares;
+	Club club;
 };

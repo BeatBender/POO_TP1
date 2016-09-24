@@ -1,3 +1,5 @@
+#include <string>
+
 class Personne
 {
 public:
@@ -5,5 +7,6 @@ public:
 	~Personne();
 
 private:
-
+	std::string nom, prenom, role;
+	int age;
 };

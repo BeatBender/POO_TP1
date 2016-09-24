@@ -1,3 +1,5 @@
+#include <string>
+
 class Stade
 {
 public:
@@ -5,5 +7,6 @@ public:
 	~Stade();
 
 private:
-
+	std::string nom, qualite, adresse;
+	int capacite;
 };
