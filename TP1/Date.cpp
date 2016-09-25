@@ -5,16 +5,12 @@ using namespace std;
 
 Date::Date()
 {
-	jour = "0";
-	mois = "0";
-	annee = "0";
+	date = "0";
 }
 
-Date::Date(string j, string m, string a)
+Date::Date(string d)
 {
-	jour = j;
-	mois = m;
-	annee = a;
+	date = d;
 }
 
 Date::~Date()

@@ -4,6 +4,7 @@ class Personne
 {
 public:
 	Personne();
+	void SetPersonne();
 	~Personne();
 
 private:

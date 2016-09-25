@@ -5,6 +5,11 @@ Personne::Personne()
 
 }
 
+void Personne::SetPersonne()
+{
+
+}
+
 Personne::~Personne()
 {
 

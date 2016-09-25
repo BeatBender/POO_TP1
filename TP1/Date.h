@@ -4,9 +4,9 @@ class Date
 {
 public:
 	Date();
-	Date(std::string, std::string, std::string);
+	Date(std::string);
 	~Date();
 
 private:
-	std::string jour, mois, annee;
+	std::string date;
 };

@@ -58,7 +58,7 @@ void Club::SetClub(Club* club)
 		unJoueur->SetJoueur(nouvJoueur);
 		effectif->push_back(*nouvJoueur);
 		cout << "Si vous voulez entrer un nouveau joueur, entrez 1. Sinon, entrez 0" << endl;
-		cin >> cont >> "\n";
+		cin >> cont;
 	}
 }
 

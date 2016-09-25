@@ -1,14 +1,15 @@
 #include <string>
-#include <list>
+#include <vector>
 #include "TitreGagne.h"
 
 class Entraineur
 {
 public:
 	Entraineur();
+	void SetEntraineur(Entraineur*);
 	~Entraineur();
 
 private:
 	std::string nom, prenom, lieu_obtention_grade;
-	std::list<TitreGagne> liste_titre;
+	vector<TitreGagne> liste_titre;
 };

@@ -13,7 +13,7 @@ void main()
 
 	while (true)
 	{
-		cout << " Selectionnez un choix: " << endl << "1. Ajouter un club de Hockey a la liste" << endl << "2. Supprimer un club de la liste" << endl << "3. Afficher les joueurs d'un club" << endl << "4. Trouver l'entraineur avec le plus de titres gagnes" << endl << "Ctrl+Z. Quitter l'application." << endl;
+		cout << " Selectionnez un choix: " << endl << "1. Ajouter un club de Hockey a la liste." << endl << "2. Supprimer un club de la liste." << endl << "3. Afficher les joueurs d'un club." << endl << "4. Trouver l'entraineur avec le plus de titres gagnes." << endl << "5. Trouver le club avec le plus de titres gagnes." << endl << "Ctrl+Z. Quitter l'application." << endl;
 		cin >> choix;
 		if (choix == 1)
 		{
@@ -59,6 +59,14 @@ void main()
 		}
 
 		if (choix == 4)
+		{
+			for (int i = 0; i < vector_clubs.size(); i++)
+			{
+				
+			}
+		}
+
+		if (choix == 5)
 		{
 
 		}

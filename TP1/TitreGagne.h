@@ -5,6 +5,7 @@ class TitreGagne
 {
 public:
 	TitreGagne();
+	void SetTitre(TitreGagne*);
 	~TitreGagne();
 
 private:
