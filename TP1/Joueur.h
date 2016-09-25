@@ -6,7 +6,7 @@ class Joueur
 {
 public:
 	Joueur();
-	void CreerJoueur();
+	void SetJoueur(Joueur*);
 	void AfficherJoueur(Joueur);
 	~Joueur();
 

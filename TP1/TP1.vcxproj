@@ -124,6 +124,7 @@
     <ClCompile Include="Entraineur.cpp" />
     <ClCompile Include="Joueur.cpp" />
     <ClCompile Include="LigueHockey.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="Palamares.cpp" />
     <ClCompile Include="Parcours.cpp" />
     <ClCompile Include="Personne.cpp" />

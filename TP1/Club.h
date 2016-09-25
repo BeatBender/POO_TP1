@@ -12,6 +12,7 @@ public:
 	Club();
 	void DeleteClub(Club*);
 	void SetClub(Club*);
+	void AfficherClub(Club*);
 	void AfficherJoueurs(Club*);
 	~Club();
 

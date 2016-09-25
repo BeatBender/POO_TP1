@@ -34,6 +34,9 @@ Club::~Club()
 void Club::SetClub(Club* club)
 {
 	bool cont = 1;
+	Joueur* unJoueur = NULL;
+	Joueur* nouvJoueur;
+
 	printf("Veuillez entrer le nom du club: ");
 	scanf("%s", *club->nom);
 	printf("Entrez la ville du club: ");
@@ -46,14 +49,22 @@ void Club::SetClub(Club* club)
 	scanf("%Date", *club->annee_creation);
 	printf("Entrez un palmares du club: ");
 	scanf("%Palmares", *club->palmares);
-	printf("Entrez le stade su club: ");
+	printf("Entrez le stade du club: ");
 	scanf("%Stade", *club->stade_du_club);
 
 	while (cont == 1)
 	{
-		
+		nouvJoueur = new Joueur;
+		unJoueur->SetJoueur(nouvJoueur);
+		effectif->push_back(*nouvJoueur);
+		cout << "Si vous voulez entrer un nouveau joueur, entrez 1. Sinon, entrez 0" << endl;
+		cin >> cont >> "\n";
 	}
-	
+}
+
+void Club::AfficherClub(Club*)
+{
+	cout << this->nom << endl;
 }
 
 void Club::DeleteClub(Club* club)
@@ -65,6 +76,7 @@ void Club::DeleteClub(Club* club)
 	club->annee_creation = NULL;
 	club->palmares = NULL;
 	club->stade_du_club = NULL;
+	Club::~Club();
 }
 
 void Club::AfficherJoueurs(Club* club)
