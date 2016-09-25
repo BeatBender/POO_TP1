@@ -1,15 +1,17 @@
 #include <string>
-#include <list>
+#include <vector>
 #include "Parcours.h"
 
 class Joueur
 {
 public:
 	Joueur();
+	void CreerJoueur();
+	void AfficherJoueur(Joueur);
 	~Joueur();
 
 private:
-	std::string nom, prenom, ville_naissance;
-	float taille, poids;
-	std::list<Parcours> parcours_joueur;
+	std::string *nom, *prenom, *ville_naissance;
+	float *taille, *poids;
+	std::vector<Parcours> *parcours_joueur;
 };

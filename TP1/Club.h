@@ -1,5 +1,5 @@
 #include <string>
-#include <list>
+#include <vector>
 #include "Date.h"
 #include "Joueur.h"
 #include "Palmares.h"
@@ -10,14 +10,16 @@ class Club
 {
 public:
 	Club();
+	void DeleteClub(Club*);
 	void SetClub(Club*);
+	void AfficherJoueurs(Club*);
 	~Club();
 
 private:
 	std::string *histoire, *couleur, *ville, *nom;
 	Date* annee_creation;
-	std::list<Joueur>* effectif;
+	std::vector<Joueur>* effectif;
 	Palmares* palmares;
 	Stade* stade_du_club;
-	std::list<Personne>* staff;
+	std::vector<Personne>* staff;
 };
