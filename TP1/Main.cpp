@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "Club.h"
+#include "Entraineur.h"
 
 using namespace std;
 
@@ -60,10 +61,20 @@ void main()
 
 		if (choix == 4)
 		{
-			for (int i = 0; i < vector_clubs.size(); i++)
+			int nbTitres = 0;
+			Entraineur plusDeTitres;
+			vector<Entraineur> vecteur_entraineur2;
+			Club* unClub;
+			unClub->CopyVector();
+			for (int i = 0; i < vecteur_entraineur2.size(); i++)
 			{
-				
+				if (vecteur_entraineur2.at(i).ReturnListe_Titre()> nbTitres)
+				{
+					nbTitres = vecteur_entraineur2.at(i).ReturnListe_Titre();
+					plusDeTitres = vecteur_entraineur2.at(i);
+				}
 			}
+			cout << "L'entraineur ayant le plus de titres est :" << plusDeTitres.ReturnTrainerName(plusDeTitres) << " avec " << nbTitres << " titres." << endl;
 		}
 
 		if (choix == 5)

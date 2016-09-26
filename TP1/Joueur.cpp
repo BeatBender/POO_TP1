@@ -36,11 +36,15 @@ void Joueur::SetJoueur(Joueur* joueur)
 	scanf("%f", *joueur->poids);
 	printf("Entrez le parcours du joueur: ");
 	scanf("%Parcours", *joueur->parcours_joueur);
+
+	return;
 }
 
 void Joueur::AfficherJoueur(Joueur)
 {
 	cout << this->prenom << this->nom << endl;
+
+	return;
 }
 
 Joueur::~Joueur()

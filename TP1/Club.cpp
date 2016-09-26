@@ -1,5 +1,6 @@
 #include "Club.h"
 #include "Joueur.h"
+#include "Entraineur.h"
 #include <vector>
 #include <iostream>
 
@@ -60,11 +61,13 @@ void Club::SetClub(Club* club)
 		cout << "Si vous voulez entrer un nouveau joueur, entrez 1. Sinon, entrez 0" << endl;
 		cin >> cont;
 	}
+	return;
 }
 
 void Club::AfficherClub(Club*)
 {
 	cout << this->nom << endl;
+	return;
 }
 
 void Club::DeleteClub(Club* club)
@@ -77,6 +80,8 @@ void Club::DeleteClub(Club* club)
 	club->palmares = NULL;
 	club->stade_du_club = NULL;
 	Club::~Club();
+
+	return;
 }
 
 void Club::AfficherJoueurs(Club* club)
@@ -87,5 +92,13 @@ void Club::AfficherJoueurs(Club* club)
 	{
 		joueurCourant->AfficherJoueur(effectif->at(i));
 	}
+
+	return;
+}
+
+void Club::CopyVector()
+{
+	Entraineur entraineur;
+	vecteur_entraineur2 = entraineur.vecteur_entraineur;
 }
 

@@ -1,4 +1,5 @@
 #include "Entraineur.h"
+#include "Personne.h"
 #include <iostream>
 #include <vector>
 
@@ -30,7 +31,26 @@ void Entraineur::SetEntraineur(Entraineur* trainer)
 		cout << "Entrez 1 si vous voulez continuer, entrez 0 sinon.";
 		cin >> cont;
 	}
-	
+
+	return;	
+}
+
+void Entraineur::PushBackEntraineur(Personne entraineur)
+{
+	Entraineur nouvEntraineur;
+	nouvEntraineur.nom = entraineur.nom;
+	nouvEntraineur.prenom = entraineur.prenom;
+	vecteur_entraineur.push_back(nouvEntraineur);
+}
+
+int Entraineur::ReturnListe_Titre()
+{
+	return liste_titre.size();
+}
+
+string Entraineur::ReturnTrainerName(Entraineur entraineur)
+{
+	return entraineur.prenom + " " + entraineur.nom;
 }
 
 Entraineur::~Entraineur()

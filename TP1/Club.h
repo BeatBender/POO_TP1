@@ -2,6 +2,7 @@
 #include <vector>
 #include "Date.h"
 #include "Joueur.h"
+#include "Entraineur.h"
 #include "Palmares.h"
 #include "Stade.h"
 #include "Personne.h"
@@ -14,6 +15,7 @@ public:
 	void SetClub(Club*);
 	void AfficherClub(Club*);
 	void AfficherJoueurs(Club*);
+	void CopyVector();
 	~Club();
 
 private:
