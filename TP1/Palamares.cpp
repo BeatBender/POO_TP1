@@ -3,19 +3,19 @@
 
 using namespace std;
 
-Palmares::Palmares()
+Palmares::Palmares()//Constructeur
 {
 	titre = " ";
 	Date::Date();
 }
 
-Palmares::Palmares(string t, Date d)
+Palmares::Palmares(string t, Date d) //Constructeur
 {
 	titre = t;
 	date = d;
 }
 
-Palmares::~Palmares()
+Palmares::~Palmares()//Destructeur
 {
 
 }

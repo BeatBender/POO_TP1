@@ -1,6 +1,7 @@
 #include "TitreGagne.h"
+#include "Club.h"
 
-TitreGagne::TitreGagne()
+TitreGagne::TitreGagne()//Constructeur
 {
 	Palmares::Palmares();
 	Club::Club();
@@ -16,7 +17,7 @@ void TitreGagne::SetTitre(TitreGagne* titre)
 	return;
 }
 
-TitreGagne::~TitreGagne()
+TitreGagne::~TitreGagne()//Destructeur
 {
 
 }

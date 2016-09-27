@@ -5,14 +5,8 @@
 
 using namespace std;
 
-/*ostream& operator<<(ostream& os, const Joueur& j)
-{
-	cout << j;
-	return os;
-}*/
 
-
-Joueur::Joueur()
+Joueur::Joueur() //Constructeur
 {
 	nom = new string;
 	prenom = new string;
@@ -47,7 +41,7 @@ void Joueur::AfficherJoueur(Joueur)
 	return;
 }
 
-Joueur::~Joueur()
+Joueur::~Joueur()	//Destructeur
 {
 	delete nom;
 	delete prenom;

@@ -5,7 +5,7 @@ class Palmares
 {
 public:
 	Palmares();
-	Palmares(std::string, Date);
+	Palmares(std::string, Date);	//Titre et la date d'obtention du titre
 	~Palmares();
 
 private:

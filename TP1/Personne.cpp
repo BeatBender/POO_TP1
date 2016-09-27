@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Personne::Personne()
+Personne::Personne() //Constructeur
 {
 	nom = "";
 	prenom = "";
@@ -14,7 +14,7 @@ Personne::Personne()
 
 bool Personne::IsEntraineur(Personne personne)
 {
-	if (personne.role == "Entraineur" || "Entraîneur" || "entraineur" || "entraîneur")
+	if (personne.role == "Entraineur" || "Entraîneur" || "entraineur" || "entraîneur") //Tiens en compte les différentes façons de l'écrire par l'utilisateur
 	{
 		return 1;
 	}
@@ -39,7 +39,7 @@ void Personne::SetPersonne()
 	return;
 }
 
-Personne::~Personne()
+Personne::~Personne()//Destructeur
 {
 
 }

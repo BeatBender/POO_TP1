@@ -3,17 +3,17 @@
 
 using namespace std;
 
-Date::Date()
+Date::Date()	//Constructeur par défaut
 {
 	date = "0";
 }
 
-Date::Date(string d)
+Date::Date(string d)	//Constructeur
 {
 	date = d;
 }
 
-Date::~Date()
+Date::~Date()	//Destructeur
 {
 
 }

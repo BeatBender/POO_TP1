@@ -7,7 +7,7 @@
 using namespace std;
 
 
-Club::Club()
+Club::Club() //Constructeur
 {
 	nom = new string;
 	histoire = new string;
@@ -20,7 +20,7 @@ Club::Club()
 	staff = new vector<Personne>;
 }
 
-Club::~Club()
+Club::~Club() //Destructeur
 {
 	delete nom;
 	delete histoire;
@@ -53,7 +53,7 @@ void Club::SetClub(Club* club)
 	printf("Entrez le stade du club: ");
 	scanf("%Stade", *club->stade_du_club);
 
-	while (cont == 1)
+	while (cont == 1) //Boucle d'ajout de joueurs
 	{
 		nouvJoueur = new Joueur;
 		unJoueur->SetJoueur(nouvJoueur);
@@ -88,7 +88,7 @@ void Club::AfficherJoueurs(Club* club)
 {
 	Joueur *joueurCourant;
 	joueurCourant = NULL;
-	for (int i = 0; i < effectif->size(); i++)
+	for (int i = 0; i < effectif->size(); i++) //Boucle d'affichage de joueurs d'un club
 	{
 		joueurCourant->AfficherJoueur(effectif->at(i));
 	}

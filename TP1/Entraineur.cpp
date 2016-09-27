@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Entraineur::Entraineur()
+Entraineur::Entraineur()	//Constructeur
 {
 	nom = " ";
 	prenom = " ";
@@ -24,10 +24,11 @@ void Entraineur::SetEntraineur(Entraineur* trainer)
 	scanf("%s", trainer->lieu_obtention_grade);
 	printf("Veuillez entrer la liste des titres de l'entraineur: ");
 
-	while (cont != 1)
+	while (cont != 1)	//Boucle de titres gagnés par l'entraineur
 	{
 		TitreGagne unTitre;
 		scanf("%TitreGagne", unTitre);
+		liste_titre.push_back(unTitre);
 		cout << "Entrez 1 si vous voulez continuer, entrez 0 sinon.";
 		cin >> cont;
 	}
@@ -53,7 +54,7 @@ string Entraineur::ReturnTrainerName(Entraineur entraineur)
 	return entraineur.prenom + " " + entraineur.nom;
 }
 
-Entraineur::~Entraineur()
+Entraineur::~Entraineur()	//Destructeur
 {
 
 }

@@ -11,11 +11,11 @@ class Club
 {
 public:
 	Club();
-	void DeleteClub(Club*);
-	void SetClub(Club*);
-	void AfficherClub(Club*);
-	void AfficherJoueurs(Club*);
-	void CopyVector();
+	void DeleteClub(Club*);		//Supprime un club
+	void SetClub(Club*);		//Entre les informations sur un club
+	void AfficherClub(Club*);	//Affiche un club à l'écran
+	void AfficherJoueurs(Club*);//Affiche les joueurs d'un club
+	void CopyVector();			//Copie le vecteur d'entraineur créer par la classe entraineur au vecteur local d'entraineur de la classe club
 	~Club();
 
 private:
@@ -25,4 +25,5 @@ private:
 	Palmares* palmares;
 	Stade* stade_du_club;
 	std::vector<Personne>* staff;
+	std::vector<Entraineur> vecteur_entraineur2;	//Vecteur local d'entraineur de club
 };
